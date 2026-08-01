@@ -53,12 +53,12 @@
 .faculty-heading{margin-bottom:28px}
 .faculty-heading>span{color:var(--royal);font-size:9px;font-weight:800;letter-spacing:.18em}
 .faculty-heading h3{font:500 30px Georgia,serif;color:var(--navy);margin:8px 0 0}
-.faculty-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.faculty-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.founders-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:1040px;margin:0 auto;gap:28px}
 .faculty-card{background:#fff;border:1px solid #e1e5ea;overflow:hidden;transition:transform .3s,box-shadow .3s}
 .faculty-card:hover{transform:translateY(-7px);box-shadow:0 20px 45px rgba(7,31,61,.13)}
-.faculty-photo{height:205px;background:#f4f6f8;overflow:hidden}
+.faculty-photo{height:205px;background:#f4f6f8;overflow:hidden}.founder-photo{height:520px}
 .faculty-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
-.faculty-content{position:relative;padding:25px 23px 23px;min-height:250px}
+.faculty-content{position:relative;padding:25px 23px 23px;min-height:250px}.founder-card .faculty-content{padding:30px;min-height:330px}.faculty-bio{font-size:14px;color:var(--muted);line-height:1.75;margin:16px 0 0}
 .faculty-subject{display:inline-block;color:var(--royal);background:#edf4fb;padding:7px 9px;font-size:8px;font-weight:800;letter-spacing:.15em}
 .faculty-content h3{font:600 21px Georgia,serif;color:var(--navy);margin:18px 0 11px}
 .faculty-qualification{font-size:12px;font-weight:700;color:#34485f;margin:0 0 7px}
@@ -66,5 +66,8 @@
 .faculty-experience{display:flex;align-items:center;gap:11px;border-top:1px solid #e1e5ea;margin-top:18px;padding-top:15px}
 .faculty-experience strong{font:600 31px Georgia,serif;color:var(--gold)}
 .faculty-experience span{font-size:8px;font-weight:800;letter-spacing:.09em;line-height:1.35;text-transform:uppercase;color:#617084}
-@media(max-width:1050px){.faculty-grid{grid-template-columns:1fr 1fr}.faculty-photo{height:245px}}
-@media(max-width:650px){.about-intro{margin-bottom:42px}.faculty-heading{text-align:center}.faculty-heading h3{font-size:25px}.faculty-grid{grid-template-columns:1fr}.faculty-card{max-width:380px;width:100%;margin:0 auto}.faculty-photo{height:270px}.faculty-content{min-height:auto}}
+@media(max-width:1050px){.faculty-grid{grid-template-columns:1fr 1fr}.faculty-photo{height:245px}.founder-photo{height:430px}}
+@media(max-width:650px){.about-intro{margin-bottom:42px}.faculty-heading{text-align:center}.faculty-heading h3{font-size:25px}.faculty-grid{grid-template-columns:1fr}.faculty-card{max-width:420px;width:100%;margin:0 auto}.faculty-photo{height:270px}.founder-photo{height:440px}.faculty-content{min-height:auto}.founder-card .faculty-content{padding:24px;min-height:auto}}
+
+/* Instagram reels */
+.instagram-section{background:var(--cream)}.reels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1080px;margin:0 auto}.reel-frame{width:100%;height:610px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 12px 35px rgba(7,31,61,.08);transition:transform .3s,box-shadow .3s}.reel-frame:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(7,31,61,.14)}.instagram-cta{text-align:center;margin-top:34px}@media(max-width:950px){.reels-grid{grid-template-columns:repeat(2,1fr)}.reels-grid .reel-frame:last-child{display:none}}@media(max-width:620px){.reels-grid{grid-template-columns:1fr}.reels-grid .reel-frame:last-child{display:block}.reel-frame{height:560px}}
