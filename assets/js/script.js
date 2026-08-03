@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const footerSlides = Array.from(document.querySelectorAll(".footer-photo-wall img"));
+  if (footerSlides.length) footerSlides[0].classList.add("active");
+  if (footerSlides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let footerSlideIndex = 0;
+    window.setInterval(() => {
+      footerSlides[footerSlideIndex].classList.remove("active");
+      footerSlideIndex = (footerSlideIndex + 1) % footerSlides.length;
+      footerSlides[footerSlideIndex].classList.add("active");
+    }, 3000);
+  }
   const menuButton = document.querySelector(".menu-btn");
   const nav = document.querySelector(".nav");
 
